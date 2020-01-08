@@ -8,10 +8,10 @@ import java.util.Map;
 
 @RestController
 public class EnvController {
-    private String port;
-    private String memoryLimit;
-    private String cfInstanceIndex;
-    private String cfInstanceAddr;
+    private final String port;
+    private final String memoryLimit;
+    private final String cfInstanceIndex;
+    private final String cfInstanceAddr;
 
     public EnvController(
            @Value("${port:NOT SET}") String port,

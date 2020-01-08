@@ -1,0 +1,11 @@
+applications:
+- name: pal-tracker
+  disk_quota: 2G
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    WELCOME_MESSAGE: Hello from Cloud Foundry
+  instances: 3
+  memory: 3G
+  routes:
+  - route: pal-tracker-lean-wolverine.apps.evans.pal.pivotal.io
+  stack: cflinuxfs3
