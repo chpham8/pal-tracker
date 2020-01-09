@@ -28,7 +28,8 @@ public class TimeEntryController {
 
     @GetMapping
     public ResponseEntity<List<TimeEntry>> list() {
-        return new ResponseEntity<>(this.timeEntryRepository.list(), HttpStatus.OK);
+        List<TimeEntry> ret = this.timeEntryRepository.list();
+        return new ResponseEntity<>(ret, HttpStatus.OK);
     }
 
     @PutMapping("/{id}")

@@ -1,9 +1,7 @@
 package io.pivotal.pal.tracker;
 
-import javax.annotation.Generated;
 import java.time.LocalDate;
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicLong;
 
 public class TimeEntry {
     private long id;
