@@ -1,12 +1,9 @@
 package io.pivotal.pal.tracker;
 
-import org.springframework.stereotype.Repository;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     private Map<Long, TimeEntry> timeEntryMap = new ConcurrentHashMap<>();
