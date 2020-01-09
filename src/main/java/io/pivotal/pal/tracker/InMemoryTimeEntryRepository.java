@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
-public class InMemoryTimeEntryRepository {
+public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     private Map<Long, TimeEntry> timeEntryMap = new ConcurrentHashMap<>();
     private final AtomicLong count = new AtomicLong(1);
